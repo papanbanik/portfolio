@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block headersection %}
+
+<section class="header-container">
+<img src="{{ url_for('static', filename='assets/pf.jpg') }}" 
+     alt="Profile Image" 
+     class="profile-image" 
+     style="width:150px; height:150px; border-radius:50%;">
+  <h1>Hey! I'm</h1>
+  <h1>Papan Banik (Partho)</h1>
+  <div class="content-text">
+    <h4 id="text"></h4>
+
+ <script>
+const content = "Python Developer | ML Researcher";  // Text to display
+const speed = 70;      // Speed in ms per character
+let i = 0;
+
+function type() {
+  if (i < content.length) {
+    document.getElementById("text").textContent += content.charAt(i);
+    i++;
+    setTimeout(type, speed);
+  }
+}
+type();
+</script>
+    
+  </div>
+  <div class="d-flex justify-content-center gap-5">
+  <a href="https://www.linkedin.com/in/paponbanik58/" class="btn btn-primary">Linkedin</a>  
+   <a href="https://github.com/papanbanik" class="btn btn-primary">GitHub</a> 
+  </div>
+</section>
+{% endblock %}
+
+{% block body %}
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2 id="skill"></h2>
+
+    <!---script-->
+<script>
+const content2 = "Special Skills";  // Text to display
+const speed2 = 130;      // Speed in ms per character
+let i2 = 0;
+
+function type2() {
+  if (i2 < content2.length) {
+    document.getElementById("skill").textContent += content2.charAt(i2);
+    i2++;
+    setTimeout(type2, speed2);
+  }
+}
+type2();
+</script>
+<!--end sc-->
+
+
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fas fa-code"></i></h2>
+              <h4>Data Structure & Algorithm</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fas fa-lightbulb"></i></h2>
+              <h4>Problem Solving</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fas fa-terminal"></i></h2>
+              <h4>Creating CLI tools</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fas fa-robot"></i></h2>
+              <h4>Machine Learning</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fas fa-cloud"></i></h2>
+              <h4>Cloud</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-linux"></i></h2>
+              <h4>Linux System Operating</h4>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>    
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects2" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Popular Project</h2>
+    <p>Check out some of my projects</p>
+  </div>
+
+    <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <div class="container">
+              <h3>Species Detection</h3>
+              <p style="text-align: justify;">The Species Project is a machine learning project designed to classify different species of plants based on their physical attributes such as sepal length, sepal width, petal length, and petal width. Using datasets like the Iris dataset, the project applies supervised learning algorithms</p>
+              <a href="https://iris-species-detection-2.onrender.com/" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+    <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <div class="container">
+              <h3>Sentiment Detection</h3>
+              <p style="text-align: justify;">This project analyzes text data to determine the sentiment of user input—whether it is positive, negative, or neutral. Using machine learning and natural language processing techniques</p>
+              <a href="https://colab.research.google.com/drive/1LU_8FiouUZv4anqTNq4RpdhtQLmjy6GC#scrollTo=uKpnJsCse64q" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+   <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <div class="container">
+              <h3>Smart Farmer</h3>
+              <p style="text-align: justify;">The Smart Farmer app is designed to assist farmers with crop management and decision-making. It provides features such as crop recommendations, weather alerts, soil condition monitoring, and expert advice</p>
+              <a href="https://github.com/papanbanik/Smart_Farmer" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+</section>
+{% endblock %}
