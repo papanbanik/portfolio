@@ -6,6 +6,8 @@ from flask_migrate import Migrate, migrate
 
 import requests
 import re
+import os
+
 
 # create flask app
 app = Flask(__name__)
@@ -88,5 +90,7 @@ def contact_page():
 def about_page():
     return render_template('about.html', title="Projects")
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 8000))
+    app.run(host='0.0.0.0', port=port, debug=False)
