@@ -338,6 +338,21 @@ body {
   /* 5px rounded corners */
   padding: 10px;
 }
+.card-image {
+    border-radius: 8%;
+    animation: bounce 1s infinite alternate;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: bounce;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+}
 
 /* On mouse-over, add a deeper shadow */
 .textcard:hover {
